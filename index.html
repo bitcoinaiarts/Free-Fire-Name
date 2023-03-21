@@ -1,0 +1,36 @@
+<h1>Free Fire name or nickname</h1>
+<p>Are you a seasoned gamer or just starting out? Are you struggling to come up with a cool, catchy name for yourself? Have you been searching for an app that can generate Free Fire names but haven't found one yet? Look no further! With a plethora of special characters and unique names used in Free Fire, you'll be able to quickly find a name that fits your style. We offer more than <b>100K Free Fire name or nickname</b> Ideas for Free Fire.</p>
+<div class="card">
+  <div class="card bg-primary text-white">
+  <div class="card-header">
+    Free Fire name or nickname
+  </div>
+</div>
+  <div class="card-body">
+    <center><h2 class="card-title"><p id="username"></p></h2>
+    <button class="btn btn-primary" onclick="generateUsername()">Generate Free Fire name or nickname</button></center>
+  </div>
+</div>
+
+<script>
+    const adjectives = [
+  "Amazing", "Angelic", "Awesome", "Bashful", "Beautiful", "Brave", "Bright", "Bubbly", "Charming", "Cheerful", "Chic", "Classy", "Clever", "Comical", "Confident", "Cool", "Courageous", "Crazy", "Creative", "Cute", "Daring", "Dazzling", "Delightful", "Demure", "Dependable", "Determined", "Divine", "Dreamy", "Dynamic", "Eager", "Eccentric", "Elegant", "Energetic", "Enigmatic", "Enthusiastic", "Epic", "Fabulous", "Fantastic", "Fearless", "Feisty", "Flamboyant", "Flawless", "Fresh", "Friendly", "Frisky", "Fun", "Funky", "Funny", "Generous", "Gentle", "Glittery", "Gorgeous", "Graceful", "Gracious", "Happy", "Heavenly", "Helpful", "Heroic", "Hilarious", "Honest", "Hopeful", "Humorous", "Iconic", "Idealistic", "Imaginative", "Impressive", "Independent", "Innocent", "Inspiring", "Intelligent", "Intriguing", "Jazzy", "Jocular", "Joyful", "Juicy", "Kind", "Kinetic", "Kooky", "Laid-back", "Lively", "Lovely", "Lucky", "Luminous", "Magical", "Majestic", "Mischievous", "Modest", "Mystical", "Naughty", "Nice", "Nifty", "Noble", "Nutty", "Optimistic", "Outgoing", "Passionate", "Peaceful", "Playful", "Precious", "Radiant", "Relaxed", "Romantic", "Sassy", "Sensational", "Sensible", "Sensual", "Serene", "Sexy", "Shimmering", "Silly", "Smiling", "Smooth", "Soothing", "Sparkling", "Spicy", "Spirited", "Splendid", "Sporty", "Stunning", "Stylish", "Suave", "Sunny", "Super", "Sweet", "Tender", "Terrific", "Thankful", "Thrilling", "Thoughtful", "Tidy", "Tough", "Tranquil", "Trustworthy", "Unique", "Upbeat", "Vibrant", "Vivacious", "Wacky", "Warm", "Whimsical", "Wild", "Wise", "Wonderful", "Wondrous", "Zany"
+];
+
+const nouns = [
+  "Ace", "Angel", "Babe", "Baby", "Bae", "Beauty", "Boss", "Braveheart", "Bunny", "Captain", "Champ", "Charmer", "Chief", "Cinderella", "Cool Cat", "Cowboy", "Cuddlebug", "Cupcake", "Cutie", "Daredevil", "Diamond", "Diva", "Dreamer", "Dynamite", "Emperor", "Empress", "Enchantress", "Firecracker", "Flash", "Flower", "Giggles", "Gingerbread", "Glitter", "Goddess", "Golden", "Heartbreaker", "Hero", "Honey", "Hotshot", "Hunk", "Jedi", "Jewel", "Joker", "Juliet", "King", "Kitty", "Lady", "Lionheart", "Little Miss", "Lovebug", "Lover", "Lucky", "Magic", "Maverick", "Miracle", "Moonbeam", "Ninja", "Noodle", "Optimist", "Panda", "Peach", "Pebbles", "Phoenix", "Pilot", "Pirate", "Pixie", "Princess", "Pudding", "Pumpkin", "Queen", "Rainbow", "Rebel", "Rockstar", "Romeo", "Rose", "Sailor", "Samurai", "Scholar", "Scorpion", "Secret Agent", "Shadow", "Shark", "Sheriff", "Shimmer", "Shortcake", "Smoochie", "Snickerdoodle", "Snowflake", "Sparkle", "Star", "Superstar", "Sweetheart", "Teddy", "Thunderbolt", "Tiger", "Titan", "Treasure", "Unicorn", "Viking", "Warrior", "Wildfire", "Wizard", "Wonder", "Wonder Woman", "X-Men", "Yankee", "Yeti", "Yoda", "Youngblood"
+];
+
+const symbols = [
+  "🔥", "💥", "🌟", "🌞", "🐯", "🐺", "🐗", "🐴", "🐘", "🐧", "🐉", "😀", "😂", "😍", "😜", "👍", "💪", "👀", "🔥", "🌈", "💎", "🎉", "🎈", "🎁", "🌺", "🍕", "🍔", "🍟", "🍩", "🍭", "🍬", "🍫", "🍪", "🍺", "🍹", "🏀", "⚽", "🏈", "⛳", "🎱", "🏆", "😀", "😃", "😄", "😁", "😆", "😅", "😂", "😊", "😇", "😉", "😌", "😍", "😘", "😗", "😙", "😚", "😋", "😛", "😝", "😜", "😎", "😏", "😒", "😞", "😔", "😟", "😕", "☹️", "😣", "😖", "😫", "😩", "😢", "😭", "😮‍💨", "😤", "😠", "😡", "😳", "😱", "😨", "😰", "😥", "😓", "😶", "😐", "😑", "😬", "😯", "😦", "😧", "😮", "😲", "😴", "😪", "😵", "😵‍💫", "😷", "😈", "👿", "👹", "👺", "👻", "👽", "👾", "🎃"
+];
+
+function generateUsername() {
+  const randomAdj = adjectives[Math.floor(Math.random() * adjectives.length)];
+  const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
+  const randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+  const username = randomAdj + randomNoun + randomSymbol;
+  document.getElementById("username").textContent = username;
+}
+
+  </script>
